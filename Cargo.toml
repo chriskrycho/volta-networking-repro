@@ -1,0 +1,18 @@
+[package]
+name = "vnr"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+attohttpc = { version = "0.28", default-features = false, features = [
+    "json",
+    "compress",
+    "tls-rustls-native-roots",
+] }
+flate2 = "1.0"
+headers = "0.4"
+log = "0.4"
+simplelog = "0.12"
+tar = "0.4.13"
+tee = "0.1.0"
+thiserror = "1"
